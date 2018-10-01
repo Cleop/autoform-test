@@ -11,7 +11,7 @@ defmodule AutoformTestWeb.UserController do
   end
 
   def edit(conn, %{"id" => id}) do
-    user = %User{name: "Test User", age: "55", id: id}
+    user = %User{email: "jobloggs@dwyl.com", id: id}
     changeset = User.changeset(user, %{})
 
     conn

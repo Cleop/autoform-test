@@ -4,8 +4,7 @@ defmodule AutoformTest.User do
 
 
   schema "users" do
-    field :age, :integer
-    field :name, :string
+    field :email, :string
 
     timestamps()
   end
@@ -13,7 +12,7 @@ defmodule AutoformTest.User do
   @doc false
   def changeset(user, attrs) do
     user
-    |> cast(attrs, [:name, :age])
-    |> validate_required([:name, :age])
+    |> cast(attrs, [:email])
+    |> validate_required([:email])
   end
 end

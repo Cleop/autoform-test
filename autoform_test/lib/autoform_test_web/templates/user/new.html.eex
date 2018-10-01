@@ -5,7 +5,7 @@
   <%= render_autoform(@conn, :create, AutoformTest.User, changeset: @changeset) %>
   <h3 class="f4 lh4">Set Up a Venue</h1>
   <h2 class="f5 lh5">Basic Information</h2>
-  <%= render_autoform(@conn, :create, AutoformTest.User, changeset: @changeset) %>
+  <%= render_autoform(@conn, :create, AutoformTest.Venue, changeset: @changeset) %>
   <p class="underline mid-blue mv0 f6 lh6 pointer">Look Up Postcode</p>
   <h3 class="f4 lh4">Add Products to your Stocklist</h1>
   <%= render_autoform(@conn, :create, AutoformTest.User, changeset: @changeset) %>
