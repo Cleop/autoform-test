@@ -7,7 +7,7 @@ defmodule AutoformTestWeb.UserController do
   def new(conn, _params) do
     changeset = User.changeset(%User{}, %{})
 
-    render_autoform(conn, :create, User, changeset: changeset)
+    render conn, "new.html", changeset: changeset
   end
 
   def edit(conn, %{"id" => id}) do
